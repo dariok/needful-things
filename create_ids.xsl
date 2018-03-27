@@ -45,6 +45,9 @@
                 <xsl:when test="self::tei:cit">
                     <xsl:value-of select="'cit' || (count(preceding::tei:cit) + 1)"/>
                 </xsl:when>
+                <xsl:when test="self::tei:head or self::tei:label">
+                    <xsl:value-of select="'hl' || (count(preceding::tei:label | preceding::tei:head) + 1)"/>
+                </xsl:when>
             </xsl:choose>
         </xsl:variable>
         <xsl:element name="{local-name()}">
