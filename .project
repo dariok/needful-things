@@ -6,12 +6,18 @@
 	</projects>
 	<buildSpec>
 		<buildCommand>
+			<name>org.eclipse.texlipse.builder.TexlipseBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+		<buildCommand>
 			<name>com.oxygenxml.editor.xmlbuilder</name>
 			<arguments>
 			</arguments>
 		</buildCommand>
 	</buildSpec>
 	<natures>
+		<nature>org.eclipse.texlipse.builder.TexlipseNature</nature>
 		<nature>com.oxygenxml.editor.xmlnature</nature>
 	</natures>
 </projectDescription>
