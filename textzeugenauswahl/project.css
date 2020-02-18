@@ -1,0 +1,70 @@
+.text .fn_number {
+  vertical-align: super;
+  font-size: 9pt;
+  line-height:9pt;
+}
+.footnote .fn_number, #ann .fn_number {
+  display: inline-block;
+  width: 3ex;
+  vertical-align: top;
+}
+
+span.fn-text {
+  display: inline-block;
+  width: calc(100% - 3ex);
+}
+
+@font-face {
+  font-family: greek;
+  src: local("FreeSerif"),
+       url("FreeSerif.woff");
+}
+.greek {
+  font-family: greek;
+}
+
+#texts, #images {
+  background-color: white;
+  border: 0.1px solid;
+  padding: 0.5em;
+  position: fixed;
+  z-index: 99;
+  right: 0;
+}
+
+#wdbContent {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 2px 0px 0px 5px;
+}
+
+#ann {
+  position: absolute;
+  z-index: 2;
+  background-color: white;
+}
+
+.content {
+  flex: 1 1 0;
+}
+
+.info {
+  border: 1px solid black;
+  margin: 3px;
+  padding: 3px;
+  background-color: lightgoldenrodyellow;
+  text-align: center;
+}
+
+a {
+  color: #0979B2;
+}
+
+header {
+  border-bottom: 2.5px inset black;
+  padding: 0px 5px 2px 5px;
+}
+aside {
+  padding: 0px 5px 0px 0px;
+}
