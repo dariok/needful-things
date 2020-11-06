@@ -38,8 +38,8 @@
     <xsl:variable name="books" select="(
       'Gen', 'Ex', 'Lev', 'Num', 'Dtn', 'Jos', 'Ri', 'Rut', 'ISam', 'IISam', 'IKön', 'IIKön', 'IChr', 'IIChr', 'Esra',
       'Neh', 'Tob', 'Jdt', 'Est', 'IMakk', 'IIMakk', 'IIIMakk', 'IVMakk', 'Ijob', 'Ps', 'Prov', 'Koh', 'Hld', 'Weish',
-      'Sir', 'Jes', 'Jer', 'Klgl', 'Bar', 'Ez', 'Dan', 'Hos', 'Joel', 'Am', 'Obd', 'Jona', 'Mi', 'Nah', 'Hab', 'Zef',
-      'Hag', 'Sach', 'Mal', 'Mt', 'Mk', 'Lk', 'Joh', 'Apg', 'Röm', 'IKor', 'IIKor', 'Gal', 'Eph', 'Phil', 'Kol',
+      'Sir', 'Jes', 'Jer', 'Thr', 'Bar', 'Ez', 'Dan', 'Hos', 'Joel', 'Am', 'Obd', 'Jona', 'Mi', 'Nah', 'Hab', 'Zef',
+      'Hag', 'Sach', 'Mal', 'Mt', 'Mk', 'Lk', 'Joh', 'Act', 'Röm', 'IKor', 'IIKor', 'Gal', 'Eph', 'Phil', 'Kol',
       'IThess', 'IIThess', 'ITim', 'IITim', 'Tit', 'Phlm', 'Hebr', 'Jak', 'IPetr', 'IIPetr', 'IJoh', 'IIJoh', 'IIIJoh',
       'Jud', 'Apk', 'OrMan', 'Laod', 'IIIEsr', 'IVEsr')"/>
     
@@ -52,8 +52,8 @@
     <xsl:variable name="books" select="(
       'Gen', 'Ex', 'Lev', 'Num', 'Dtn', 'Jos', 'Ri', 'Rut', 'ISam', 'IISam', 'IKön', 'IIKön', 'IChr', 'IIChr', 'Esra',
       'Neh', 'Tob', 'Jdt', 'Est', 'IMakk', 'IIMakk', 'IIIMakk', 'IVMakk', 'Ijob', 'Ps', 'Prov', 'Koh', 'Hld', 'Weish',
-      'Sir', 'Jes', 'Jer', 'Klgl', 'Bar', 'Ez', 'Dan', 'Hos', 'Joel', 'Am', 'Obd', 'Jona', 'Mi', 'Nah', 'Hab', 'Zef',
-      'Hag', 'Sach', 'Mal', 'Mt', 'Mk', 'Lk', 'Joh', 'Apg', 'Röm', 'IKor', 'IIKor', 'Gal', 'Eph', 'Phil', 'Kol',
+      'Sir', 'Jes', 'Jer', 'Thr', 'Bar', 'Ez', 'Dan', 'Hos', 'Joel', 'Am', 'Obd', 'Jona', 'Mi', 'Nah', 'Hab', 'Zef',
+      'Hag', 'Sach', 'Mal', 'Mt', 'Mk', 'Lk', 'Joh', 'Act', 'Röm', 'IKor', 'IIKor', 'Gal', 'Eph', 'Phil', 'Kol',
       'IThess', 'IIThess', 'ITim', 'IITim', 'Tit', 'Phlm', 'Hebr', 'Jak', 'IPetr', 'IIPetr', 'IJoh', 'IIJoh', 'IIIJoh',
       'Jud', 'Apk', 'OrMan', 'Laod', 'IIIEsr', 'IVEsr')"/>
     
