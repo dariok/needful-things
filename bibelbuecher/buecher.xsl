@@ -37,11 +37,11 @@
     
     <xsl:variable name="books" select="(
       'Gen', 'Ex', 'Lev', 'Num', 'Dtn', 'Jos', 'Ri', 'Rut', 'ISam', 'IISam', 'IKön', 'IIKön', 'IChr', 'IIChr', 'Esra',
-      'Neh', 'Tob', 'Jdt', 'Est', 'IMakk', 'IIMakk', 'IIIMakk', 'IVMakk', 'Ijob', 'Ps', 'Spr', 'Koh', 'Hld', 'Weish',
+      'Neh', 'Tob', 'Jdt', 'Est', 'IMakk', 'IIMakk', 'IIIMakk', 'IVMakk', 'Ijob', 'Ps', 'Prov', 'Koh', 'Hld', 'Weish',
       'Sir', 'Jes', 'Jer', 'Klgl', 'Bar', 'Ez', 'Dan', 'Hos', 'Joel', 'Am', 'Obd', 'Jona', 'Mi', 'Nah', 'Hab', 'Zef',
       'Hag', 'Sach', 'Mal', 'Mt', 'Mk', 'Lk', 'Joh', 'Apg', 'Röm', 'IKor', 'IIKor', 'Gal', 'Eph', 'Phil', 'Kol',
       'IThess', 'IIThess', 'ITim', 'IITim', 'Tit', 'Phlm', 'Hebr', 'Jak', 'IPetr', 'IIPetr', 'IJoh', 'IIJoh', 'IIIJoh',
-      'Jud', 'Offb', 'OrMan', 'Laod', 'IIIEsr', 'IVEsr')"/>
+      'Jud', 'Apk', 'OrMan', 'Laod', 'IIIEsr', 'IVEsr')"/>
     
     <xsl:value-of select="index-of($books, $book)" />
   </xsl:function>
@@ -51,11 +51,11 @@
     
     <xsl:variable name="books" select="(
       'Gen', 'Ex', 'Lev', 'Num', 'Dtn', 'Jos', 'Ri', 'Rut', 'ISam', 'IISam', 'IKön', 'IIKön', 'IChr', 'IIChr', 'Esra',
-      'Neh', 'Tob', 'Jdt', 'Est', 'IMakk', 'IIMakk', 'IIIMakk', 'IVMakk', 'Ijob', 'Ps', 'Spr', 'Koh', 'Hld', 'Weish',
+      'Neh', 'Tob', 'Jdt', 'Est', 'IMakk', 'IIMakk', 'IIIMakk', 'IVMakk', 'Ijob', 'Ps', 'Prov', 'Koh', 'Hld', 'Weish',
       'Sir', 'Jes', 'Jer', 'Klgl', 'Bar', 'Ez', 'Dan', 'Hos', 'Joel', 'Am', 'Obd', 'Jona', 'Mi', 'Nah', 'Hab', 'Zef',
       'Hag', 'Sach', 'Mal', 'Mt', 'Mk', 'Lk', 'Joh', 'Apg', 'Röm', 'IKor', 'IIKor', 'Gal', 'Eph', 'Phil', 'Kol',
       'IThess', 'IIThess', 'ITim', 'IITim', 'Tit', 'Phlm', 'Hebr', 'Jak', 'IPetr', 'IIPetr', 'IJoh', 'IIJoh', 'IIIJoh',
-      'Jud', 'Offb', 'OrMan', 'Laod', 'IIIEsr', 'IVEsr')"/>
+      'Jud', 'Apk', 'OrMan', 'Laod', 'IIIEsr', 'IVEsr')"/>
     
     <xsl:value-of select="$books[$number]" />
   </xsl:function>
