@@ -1,0 +1,32 @@
+<div>
+  <script src="resources/scripts/osdviewer.js" name="osdViewer"/>
+  <script type="application/javascript">
+    function projectTiles() {
+      let tiles = [],
+          wit = $("#imageSource").val();
+      
+      $("a[data-wit=" + wit + "]").each(function(){
+        let img = {
+          type: 'image',
+          url: $(this).attr('href')
+        };
+        if (!tiles.includes(img)) tiles.push(img);
+      });
+      
+      return tiles;
+    }
+    
+    viewer.open(projectTiles());
+    
+    viewer.removeHandler("page", osdPageHandler);
+    viewer.addHandler("page", function(source, page, data) {
+      let wit = $("#imageSource").val(),
+          target = $(".content .pagebreak a[data-wit=" + wit + "]");
+      target[source.page].scrollIntoView();
+    });
+    
+    $("#imageSource").on("change", function() {
+      viewer.open(projectTiles());
+    });
+  </script>
+</div>
