@@ -6,7 +6,7 @@
 	<!-- created 2017-07-12 editor:DK = Dario Kampkaspar, dario.kampkaspar@oeaw.ac.at -->
 	
 	<xsl:output method="html" indent="yes" />
-	<xsl:param name="id" as="xs:string"/>
+	<xsl:param name="id" as="xs:string" select="''"/>
 	<xsl:param name="render" select="false()" as="xs:boolean" />
 	
 	<xsl:template match="/">
@@ -17,7 +17,14 @@
 				</xsl:if>
 			</head>
 			<body>
-				<xsl:apply-templates select="//*[contains(@xml:id, $id) or contains(@id, $id)]" mode="start"/>
+			   <xsl:choose>
+			      <xsl:when test="exists($id)">
+			         <xsl:apply-templates select="//*[contains(@xml:id, $id) or contains(@id, $id)]" mode="start"/>
+			      </xsl:when>
+			      <xsl:otherwise>
+			         <xsl:apply-templates mode="start" />
+			      </xsl:otherwise>
+			   </xsl:choose>
 			</body>
 		</html>
 	</xsl:template>
